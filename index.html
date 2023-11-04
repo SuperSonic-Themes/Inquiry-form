@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <link rel="stylesheet" href="index.css"> -->
+
+    <title>Document</title>
+</head>
+<body>
+    <header class="bg-white py-5 px-[10rem] my-2">
+        <nav class="flex items-center justify-between container mx-auto">
+            <h2 class="text-2xl font-bold text-[#DE4E77]">
+                Turbo<span class="text-[#033A89]">Health</span><span class="text-black">.us</span>
+            </h2>
+            <div class="hidden md:flex space-x-6">
+                <a href="#" class="text-black hover:text-blue-300">Home</a>
+                <a href="#" class="text-black hover:text-blue-300">About</a>
+                <a href="#" class="text-black hover:text-blue-300">Blog</a>
+            </div>
+            <button class="max-md:hidden bg-[#033A89] text-white py-2 px-3 rounded-lg shadow-lg hover:bg-blue-700 transition duration-300">
+                Consult Us
+            </button>
+        </nav>
+    </header>
+    <hr>
+    <section>
+        <div class="mt-4">
+            <p class="text-center font-semibold text-xl m-5 py-2">See if you qualify for a $0 Premium Plan with comprehensive coverage starting today!</p>
+            <div class="grid grid-cols-3 items-center text-center place-items-center px-[10rem]">
+                <div>
+                    <img src="./logo.jpg" alt="logo" class="w-[20rem]" />
+                </div>
+                <p class="font-semibold text-xl">Serving more than 5000+ satisfied customers</p>
+                <div>
+                    <h2 class="text-2xl font-bold text-[#DE4E77]">
+                        Turbo<span class="text-[#033A89]">Health</span><span class="text-black">.us</span>
+                    </h2>
+                </div>
+            </div>
+            <div class="text-center m-5 text-2xl font-bold">Health Insurance Assistance Program</div>
+            <span class="m-96">.</span>
+            <section class="form-section flex justify-center text-center space-y-5  border-2 border-blue-100 shadow-lg shadow-blue-100">
+                <div class="main border-[3px] border-blue-100 shadow-lg shadow-blue-100 p-2 text-start px-3 space-y-5">
+                    <form method="post" id="form" class=" space-y-10">
+                        <div class="form-outer">
+                            <label >First Name</label>
+                            <input type="text" name="First-Name" class="border-2 p-2 rounded-lg">
+                        </div>
+
+
+                        <div class="form-outer">
+                            <label >Last Name</label>
+                            <input type="text" name="Last-Name" class="border-2 p-2 rounded-lg">
+                        </div>
+
+
+
+                        <div class="form-outer">
+                            <label >Zip Code</label>
+                            <input type="text" name="Zip Code" class="border-2 p-2 rounded-lg">
+                        </div>
+
+
+
+                        <div class="form-outer">
+                            <label >D.O.B</label>
+                            <input type="text" name="D.O.B" class="border-2 p-2 rounded-lg ml-10">
+                        </div>
+
+
+                        <div class="form-outer">
+                            <label >Job Id</label>
+                            <input type="text" name="Job Id" class="border-2 p-2 rounded-lg ml-10">
+                        </div>
+
+
+
+                        <div class="form-outer">
+                            <label >Phone Number</label>
+                            <input type="text" name="Phone Number" class="border-2 p-2 rounded-lg">
+                        </div>
+
+
+                        <div class="form-outer">
+                            <label >Email Address</label>
+                            <input type="email" name="Email Address" class="border-2 p-2 rounded-lg">
+                        </div>
+
+
+                        <div class="form-outer">
+                            <label >Annual Income</label>
+                            <input type="text" name="Annual Income" class="border-2 p-2 rounded-lg">
+                        </div>
+
+                        <div><button name="btn" class="bg-[#033A89] p-2 px-3 text-white ">Submit</button></div>
+
+                    </form>
+                </div>
+            </section>
+        </div>
+    </section>
+    <footer>
+        <hr>
+        <div class="grid grid-cols-5 px-[10rem] p-5 m-5">
+            <div class="space-y-2">
+                <div class="font-semibold">Company Info</div>
+                <p>About us</p>
+                <p>Carrier</p>
+                <p>We are hiring</p>
+                <p>Blog</p>
+            </div>
+            <div class="space-y-2">
+                <div class="font-semibold">Legal</div>
+                <p>About us</p>
+                <p>Carrier</p>
+                <p>We are hiring</p>
+                <p>Blog</p>
+            </div>
+            <div class="space-y-2">
+                <div class="font-semibold">Features</div>
+                <p>Business Marketing</p>
+                <p>User Analytics</p>
+                <p>Live Chat</p>
+                <p>Unlimited Support</p>
+            </div>
+            <div class="space-y-2">
+                <div class="font-semibold">Resources</div>
+                <p>Business Marketing</p>
+                <p>User Analytics</p>
+                <p>Live Chat</p>
+                <p>Unlimited Support</p>
+            </div>
+            <div>
+                <div class="font-semibold">Get In Touch</div>
+                <p>(480-55-661)</p>
+                <p>Washington DC</p>
+                <p>someone@example.com</p>
+            </div>
+        </div>
+        <footer class="bg-gray-100 p-5 font-thin px-[10rem]">
+            Turbo Health.Us All Right Reserved 2023
+        </footer>
+    </footer>
+
+
+
+
+
+
+
+    <script>
+        let  url ="https://script.google.com/macros/s/AKfycby78BRRcHlN1FrjiUkWIi9FWoxh6eL8rfyCe2KNxr27Iz9884bXpcFN-cyWQyjp8EFg/exec" 
+        let form = document.querySelector('#form');
+        form.addEventListener("submit",(e)=>{
+            e.target.btn="Submitting" 
+            let d = new FormData(form);
+            fetch(url,{
+                method: "Post",
+                body:d
+            }).then((res)=>res.text())
+            .then((finalRes) =>{
+                e.target.btn='Submit'
+                console.log(finalRes)
+            })
+            e.preventDefault();
+        })
+    </script>
+    
+
+
+</body>
+</html>
